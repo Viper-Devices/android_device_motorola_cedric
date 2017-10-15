@@ -22,6 +22,9 @@ BOARD_VENDOR := motorola-qcom
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
+# Use real battery info Use real battery info 
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno505
